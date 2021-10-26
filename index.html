@@ -11,24 +11,57 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <style>
-      .container-fluid {
-        display: flex;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-    </style>
-    <title>Base Template</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>MocoBook</title>
+    <script defer src="main.js"></script>
 </head>
 <body>
-    <!-- container Jumbotron -->
-    <div class="container-fluid">
-        <div
-          class="container col-lg-12 mt-3 mb-4"
-          style="background-color: sandybrown; height: 200px; "
-        >
-          <p style="font-size: 48px">Mocobook</p>
-          <P style="font-size: 20px">Selamat Membaca !</P>
+  <!-- container Jumbotron -->
+  <div class="container-fluid">
+    <div
+      class="container col-lg-12 mt-3 mb-4"
+      style="background-color: sandybrown; height: 200px; "
+    ><div class="text1">
+      <p style="font-size: 30px">Activity Stories MocoBook</p>
+      </div>
+      <dic class="text2">
+        <P style="font-size: 20px">Ceritakan Harimu Disini</P>
+      </dic>
+    </div>
+  </div>
+
+    <!-- Box -->
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <div class="box">
+          <div class="textbox">
+            <div class="item">
+                <a href="">
+                  <img src="https://images.unsplash.com/photo-1523203658085-27859efeaa41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" alt="Naz">
+                </a>
+                <h4> What's Happening ?</h4>
+              <textarea autofocus id="text-content" class="text-content"></textarea>
+              <button id="submit" style="background-color: green;">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://media.istockphoto.com/photos/white-blank-cardboard-package-boxe-mockup-template-on-isolated-white-picture-id1290629303?s=612x612" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
+      <div class="side bottom-side">
+        <div id="boxs">
+        <div id="tweets"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
