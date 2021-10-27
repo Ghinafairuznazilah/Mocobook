@@ -2,9 +2,9 @@ function showCards(m){
     return `
     <div class="col-md-4 my-3">
                 <div class="card">
-                    <img src="${m.img}" class="card-img-top" alt="">
+                    <img src="" class="card-img-top" alt="">
                     <div class="card-body">
-                      <h5 class="card-title">${m.title}</h5>
+                      <h5 class="card-title">${m.volumeInfo.title}</h5>
                       <h6 class="card-subtitle mb-2 text-muted">${m.auhtor}</h6>
                       <a href="#" class="btn btn-primary modal-detail-button" data-bs-toggle="modal" data-bs-target="#booksdetailModal">
                        Show Details</a>
@@ -40,13 +40,15 @@ searchButton.addEventListener('click', function(){
 const inputKeyword = document.querySelector('.input-keyword');
 fetch('https://www.googleapis.com/books/v1/volumes?q=' + inputKeyword.value)
 .then(response =>response.json())
-.then(response=> {
-    const books = response.items;
-    let cards ='';
-    books.forEach(m => cards += showCards(m));
-    const booksContainer = document.querySelector('.books-container')
-    booksContainer.innerHTML = cards;
-}
-    
+.then(response=>
+    {
+        const books = response.items;
+        let cards ='';
+        books.forEach(m => cards += showCards(m));
+        const booksContainer = document.querySelector('.books-container')
+        booksContainer.innerHTML = cards;
+        
+    }
 );
 });
+
