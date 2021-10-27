@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Questrial', sans-serif;
+}
+.nav-link:hover{
+    color: black;
+}
+.profile{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1512580770426-cbed71c40e94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bolder;
+}
+.input-group{
+    margin-top: 50px;
+}
+.input-keyword{
+    outline: none;
+}
+.search-button{
+    background-color: black;
+    border: 0;
+    color: white;
+}
+.search-button:hover{
+    background-color: #808080;
+    color: black;
+    border: 0;
+}
+
+.search-title{
+    margin-top: 50px;
+    text-align: center;
+}
+.card{
+    color:black;
+}
+.button-card{
+    background-color: black;
+    color: white;
+    border: 0;
+}
+.button-card:hover{
+    background-color: #808080;
+    color: black;
+}
