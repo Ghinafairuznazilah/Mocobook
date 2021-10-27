@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing : border-box;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Questrial', sans-serif;
+}
+.nav-link:hover{
+    color: black;
+}
+.profile{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1512580770426-cbed71c40e94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bolder;
+}
+
+.button-start{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+}
+.button-start:hover{
+    background-color: black;
+    color: white;
+}
+
+.input-keyword{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    border: 2px solid rgb(248, 26, 92);
+    
+}
+.search-button{
+    outline: none;
+    border: none;
+    background-color: rgb(248, 26, 92);
+    color: white;
+    border-radius: 60px;
+}
+.input-keyword:hover{
+    border: 2px solid aqua;
+}
+.search-button:hover{
+    border: 2px solid aqua;
+    background-color: aqua;
+    color: black;
+}
