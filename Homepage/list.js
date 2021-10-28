@@ -53,6 +53,7 @@ fetch('https://www.googleapis.com/books/v1/volumes?q=' + inputKeyword.value)
         const modalDetailButton = document.querySelectorAll('.modal-detail-button');
         modalDetailButton.forEach(btn => {
             btn.addEventListener('click', function () {
+                //ambil dataset
             const imdbid = this.dataset.imdbid;
                 fetch('https://www.googleapis.com/books/v1/volumes?q='+imdbid)
                 .then(response=> response.json())
