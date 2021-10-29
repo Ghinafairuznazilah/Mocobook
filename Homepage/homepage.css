@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url('https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80https://images.unsplash.com/photo-1613946576929-3cc54e1cb5ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80');
+    background-size: cover;
+    background-position: center;
+}
 .navbar-brand{
     font-size: 2rem;
     color: black;
@@ -22,23 +27,17 @@
 .nav-link:hover{
     color: black;
 }
-.profile{
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background-image: url('https://images.unsplash.com/photo-1512580770426-cbed71c40e94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: white;
     font-weight: bolder;
+    
 }
 .input-group{
     margin-top: 50px;
+    margin-bottom: 75px;
+    
 }
 .input-keyword{
     outline: none;
@@ -57,16 +56,50 @@
 .search-title{
     margin-top: 50px;
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 }
+
+.profile{
+    cursor: pointer;
+}
+footer{
+    color: white
+}
+ 
+.books-container{
+    margin-top: 1px !important;
+    background-color: gainsboro;
+    border-radius: 50px;
+    max-height: 100%;
+}
+
 .card{
-    color:black;
-}
-.button-card{
-    background-color: black;
+    border: none;
+    outline: none;
     color: white;
-    border: 0;
+    border-radius: 50px;
+    
 }
-.button-card:hover{
+.books-img{
+    max-height: 10em;
+}
+
+.modal-detail-button{
+    outline: none;
+    border: none;
+    background: none;
+    height: 300px;
+    color: white;
+}
+.modal-detail-button:hover{
     background-color: #808080;
-    color: black;
+    border-radius: 50px;
+
+}
+.title{
+    font-size: medium;
+    margin-top: 5px;
+}
+.author{
+    font-size: small;
 }

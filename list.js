@@ -11,8 +11,9 @@ function showCards(m){
                     </div>
                   </div>
             </div>
-    `;
-}
+    
+    `
+};
 
 
 function showBooksDetail(m){
